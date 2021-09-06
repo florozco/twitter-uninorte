@@ -1,0 +1,54 @@
+@use "sass:map";
+@import "variables";
+
+.user-mail-input {
+  color: map.get($twitter-texts, "twitter-black-text-800");
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid map.get($twitter-colors, "twitter-grey-input-border-color");
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.user-mail-input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: map.get($twitter-colors, "twitter-black-color");
+}
+
+.password-input {
+  color: map.get($twitter-texts, "twitter-black-text");
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid map.get($twitter-colors, "twitter-grey-input-border-color");
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.password-input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border-color: map.get($twitter-colors, "twitter-black-color");
+}
+
+.search-input {
+  height: 48px;
+  left: 0px;
+  right: 0px;
+  top: calc(50% - 48px / 2);
+  border-radius: 100px;
+  background-color: transparent;
+  border: transparent;
+}
+
+.search-input:focus {
+  outline-style: none;
+  box-shadow: none;
+  border: transparent;
+}

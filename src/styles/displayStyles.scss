@@ -1,0 +1,147 @@
+@use "sass:map";
+@import "variables";
+
+.inline {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.center {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.inline-real {
+  display: inline-flex;
+}
+
+.inline-left {
+  text-align: start;
+  display: inline-flex;
+}
+
+.icon-img {
+  width: 24.05px;
+  height: 21.94px;
+  vertical-align: "middle";
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.server-img {
+  width: 240.05px;
+  height: 210.94px;
+  vertical-align: "middle";
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.selected-icon-img {
+  width: 24.05px;
+  height: 21.94px;
+  vertical-align: "middle";
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.profile-icon-img {
+  width: 24.05px;
+  height: 21.94px;
+  vertical-align: "middle";
+  margin-top: 32px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.left-home-inline {
+  margin: auto;
+}
+.right-home-inline {
+  margin: auto;
+}
+
+.search-bar {
+  text-align: center;
+  display: inline-flex;
+  background-color: map.get($twitter-colors, "twitter-grey-search-input-color");
+  height: 48px;
+  left: 0px;
+  right: 0px;
+  top: calc(50% - 48px / 2);
+  border-radius: 100px;
+  border: transparent;
+}
+
+.trend-list-body {
+  background-color: map.get($twitter-colors, "twitter-grey-trend-color");
+  border: transparent;
+  border-bottom: 1px map.get($twitter-colors, "twitter-grey-trend-border-color");
+
+  //display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  text-align: start;
+
+  width: 280px;
+  height: auto;
+  left: 0px;
+  top: 64px;
+
+  border-radius: 12px;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+.trend-body {
+  padding: 0px 16px 0px;
+}
+
+.grey-border-div {
+  background-color: rgba(0, 0, 0, 0.08);
+  height: 1px;
+  width: 100%;
+  left: 0px;
+  right: 0px;
+}
+
+.trend-list-title {
+  padding: 10px 10px 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-navegation {
+  text-align: start;
+  display: block;
+  width: 285px;
+}
+
+.timeline-body {
+  width: 694px;
+
+  height: auto;
+  border-left: 1px solid
+    map.get($twitter-colors, "twitter-grey-trend-border-color");
+  border-right: 1px solid
+    map.get($twitter-colors, "twitter-grey-trend-border-color");
+}
+
+.timeline-search-trend {
+  text-align: unset;
+}
+
+.timeline-tweet {
+  text-align: unset;
+}
+
+.tweet-image {
+  left: 0px;
+  right: 31px;
+  top: 0px;
+  bottom: 0px;
+
+  border-radius: 12px;
+}

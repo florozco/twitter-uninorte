@@ -1,0 +1,17 @@
+.home {
+  display: inline-flex;
+  .label {
+    color: map.get($twitter-texts, "twitter-grey-text");
+  }
+  .button {
+    border-radius: unset;
+    width: unset;
+    height: unset;
+    color: map.get($twitter-texts, "twitter-blue-text");
+    background-color: map.get($twitter-colors, "twitter-white-color");
+    border: unset;
+  }
+  button:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,81 @@
+@use "sass:map";
+@import "variables";
+
+.join-free-forgot-password-button {
+  //label and buttons
+  border-radius: unset;
+  width: unset;
+  height: unset;
+  color: map.get($twitter-texts, "twitter-blue-text");
+  background-color: transparent;
+  border: unset;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+.join-free-forgot-password-button:hover {
+  //label and buttons
+  text-decoration: underline;
+}
+
+.button {
+  //login
+  position: absolute;
+  background: map.get($twitter-colors, "twitter-black-white");
+  border: 1px solid map.get($twitter-colors, "twitter-blue-color");
+  box-sizing: border-box;
+  border-radius: 5px;
+  :hover {
+    background: map.get($twitter-colors, "twitter-white-color");
+    border: 1px solid map.get($twitter-colors, "twitter-grey-color");
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+}
+
+.login-sign-button {
+  //login-now & sign-up buttons
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 347px;
+  height: 50px;
+  color: map.get($twitter-texts, "twitter-blue-text");
+  background-color: map.get($twitter-colors, "twitter-white-color");
+  border: 1px solid map.get($twitter-colors, "twitter-blue-color");
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.login-sign-button:hover {
+  //login buttons
+  color: map.get($twitter-texts, "twitter-grey-text");
+  background-color: map.get($twitter-colors, "twitter-white-color");
+  border: 1px solid map.get($twitter-colors, "twitter-white-grey");
+}
+
+.login-now-button {
+  //login-now & sign-up buttons
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 347px;
+  height: 50px;
+  color: map.get($twitter-texts, "twitter-white-text");
+  background-color: map.get($twitter-colors, "twitter-blue-color");
+  border: 1px solid map.get($twitter-colors, "twitter-blue-color");
+
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18.75px;
+}
+.login-now-button:hover {
+  //login buttons
+  background-color: map.get($twitter-colors, "twitter-light-blue-color");
+  border: 1px map.get($twitter-colors, "twitter-light-blue-color");
+}
