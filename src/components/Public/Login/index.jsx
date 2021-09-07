@@ -2,13 +2,14 @@ import Input from "./../../common/Input";
 import Label from "./../../common/Label";
 import Button from "./../../common/Button";
 import Form from "./../../common/Form";
-import TwitterIcon from "../../../images/twitter.svg";
+import Image from "../../../images/index";
+
 import "../../../styles/displayStyles.scss";
 
 const Login = () => (
   <>
     <Form className="center">
-      <img className="icon-img" src={TwitterIcon} /> <p></p>
+      <img className="icon-img" src={Image.twitterIcon} /> <p></p>
       <Label text="My Twitter" className="my-twitter-label" />
       <p></p>
       <Label text="Login to your account" className="login-label" /> <p></p>

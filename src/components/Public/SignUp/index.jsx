@@ -2,15 +2,15 @@ import Input from "./../../common/Input";
 import Label from "./../../common/Label";
 import Button from "./../../common/Button";
 import Form from "./../../common/Form";
+import Image from "../../../images/index";
 
-import TwitterIcon from "../../../images/twitter.svg";
 import "../../../styles/displayStyles.scss";
 
 const SignUp = () => {
   return (
     <>
       <Form className="center">
-        <img className="icon-img" src={TwitterIcon} />
+        <img className="icon-img" src={Image.twitterIcon} />
         <p></p>
         <Label text="My Twitter" className="my-twitter-label" />
         <p></p>

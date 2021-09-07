@@ -3,71 +3,59 @@ import "../../../styles/displayStyles.scss";
 import Label from "./../../common/Label";
 import Input from "./../../common/Input";
 import Button from "./../../common/Button";
-
-import HomeIcon from "../../../images/home.svg";
-import ExploreIcon from "../../../images/hashtag.svg";
-import NotificationIcon from "../../../images/bell.svg";
-import MessageIcon from "../../../images/envelope.svg";
-import BookmarkIcon from "../../../images/bookmark.svg";
-import ListIcon from "../../../images/th-list.svg";
-import ProfileIcon from "../../../images/user-circle.svg";
-import MoreIcon from "../../../images/plus-circle.svg";
-import SearchIcon from "../../../images/search.svg";
-import VerifiedIcon from "../../../images/verified.svg";
-import ServerIcon from "../../../images/server.svg";
-import TwitterIcon from "../../../images/twitter.svg";
+import Image from "../../../images/index";
 
 const Timeline = () => {
   return (
     <>
       <p className="inline">
         <p className="timeline-navegation">
-          <img className="icon-img" src={TwitterIcon} /> <p></p>
+          <img className="icon-img" src={Image.twitterIcon} /> <p></p>
           <p>
             <a className="inline">
-              <img className="selected-icon-img" src={HomeIcon} />
+              <img className="selected-icon-img" src={Image.homeIcon} />
               <Label text="Home" className="home-navegation-label" />
             </a>
           </p>
           <p>
             <a className="inline">
-              <img className="icon-img" src={ExploreIcon} />
+              <img className="icon-img" src={Image.exploreIcon} />
               <Label text="Explore" className="home-navegation-label " />
             </a>
           </p>
           <p>
             <a className="inline">
-              <img className="icon-img" src={NotificationIcon} />
+              <img className="icon-img" src={Image.notificationIcon} />
               <Label text="Notifications" className="home-navegation-label" />
             </a>
           </p>
           <p>
             <a className="inline">
-              <img className="icon-img" src={MessageIcon} />
+              <img className="icon-img" src={Image.messageIcon} />
               <Label text="Messages" className="home-navegation-label" />
             </a>
           </p>
           <p>
             <a className="inline">
-              <img className="icon-img" src={BookmarkIcon} />
+              <img className="icon-img" src={Image.bookmarkIcon} />
               <Label text="Bookmarks" className="home-navegation-label" />
             </a>
           </p>
           <p>
             <a className="inline">
-              <img className="icon-img" src={ListIcon} />
+              <img className="icon-img" src={Image.listIcon} />
               <Label text="Lists" className="home-navegation-label" />
             </a>
           </p>
           <p>
             <a className="inline">
-              <img className="icon-img" src={ProfileIcon} />
+              <img className="icon-img" src={Image.profileIcon} />
               <Label text="Profile" className="home-navegation-label" />
             </a>
           </p>
           <p>
             <a className="inline" className="inline">
-              <img className="icon-img" src={MoreIcon} />
+              <img className="icon-img" src={Image.moreIcon} />
               <Label text="More" className="home-navegation-label" />
             </a>
           </p>
@@ -76,11 +64,11 @@ const Timeline = () => {
         <p className="timeline-body">
           <Label text="Home" className="trending-title-label" />
           <p className="inline">
-            <img className="profile-icon-img" src={ProfileIcon} />
+            <img className="profile-icon-img" src={Image.profileIcon} />
             <p>
               <p className="inline">
                 <Label text="Annie" className="tweet-user-label" />
-                <img className="icon-img" src={VerifiedIcon} />
+                <img className="icon-img" src={Image.verifiedIcon} />
                 <Label text="@annie" className="tweet-at-sign-label" />
               </p>
               <p>
@@ -93,11 +81,11 @@ const Timeline = () => {
           </p>
           <div className="grey-border-div"></div>
           <p className="inline">
-            <img className="profile-icon-img" src={ProfileIcon} />
+            <img className="profile-icon-img" src={Image.profileIcon} />
             <p>
               <p className="inline">
                 <Label text="Annie" className="tweet-user-label" />
-                <img className="icon-img" src={VerifiedIcon} />
+                <img className="icon-img" src={Image.verifiedIcon} />
                 <Label text="@annie" className="tweet-at-sign-label" />
               </p>
               <p>
@@ -114,7 +102,7 @@ const Timeline = () => {
           <p className="search-bar">
             <img
               className="icon-img"
-              src={SearchIcon}
+              src={Image.searchIcon}
               Width="16.46"
               Height="16.46px"
             />
