@@ -3,17 +3,17 @@
 
 .join-free-forgot-password-button {
   //label and buttons
-  border-radius: unset;
-  width: unset;
-  height: unset;
-  color: map.get($twitter-texts, "twitter-blue-text");
   background-color: transparent;
+  border-radius: unset;
   border: unset;
+  color: map.get($twitter-texts, "twitter-blue-text");
   font-family: "Roboto";
+  font-size: 16px;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  height: unset;
   line-height: 19px;
+  width: unset;
 }
 .join-free-forgot-password-button:hover {
   //label and buttons
@@ -60,19 +60,19 @@
 
 .login-now-button {
   //login-now & sign-up buttons
-  box-sizing: border-box;
-  border-radius: 5px;
-  width: 347px;
-  height: 50px;
-  color: map.get($twitter-texts, "twitter-white-text");
-  background-color: map.get($twitter-colors, "twitter-blue-color");
-  border: 1px solid map.get($twitter-colors, "twitter-blue-color");
 
+  background-color: map.get($twitter-colors, "twitter-blue-color");
+  border-radius: 5px;
+  border: 1px solid map.get($twitter-colors, "twitter-blue-color");
+  box-sizing: border-box;
+  color: map.get($twitter-texts, "twitter-white-text");
   font-family: "Roboto";
-  font-weight: 700;
-  font-style: normal;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  height: 50px;
   line-height: 18.75px;
+  width: 347px;
 }
 .login-now-button:hover {
   //login buttons
