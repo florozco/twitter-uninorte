@@ -3,6 +3,7 @@ import "../../../styles/displayStyles.scss";
 import Label from "./../../common/Label";
 import Input from "./../../common/Input";
 import Button from "./../../common/Button";
+
 import Image from "../../../images/index";
 
 const Timeline = () => {
