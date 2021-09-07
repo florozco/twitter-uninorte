@@ -11,13 +11,13 @@ const RecoverPassword = () => {
     <>
       <Form className="center">
         <img className="icon-img" src={Image.twitterIcon} />
-        <p></p>
+        <a></a>
         <Label text="My Twitter" className="my-twitter-label" />
-        <p></p>
+        <a></a>
         <Label text="Recover your password" className="create-account-label" />
-        <p></p>
+        <a></a>
         <Label text="Email or Username" className="user-mail-pasword-label" />
-        <p></p>
+        <a></a>
         <Input
           type="text"
           className="user-mail-input"
@@ -25,9 +25,9 @@ const RecoverPassword = () => {
           id="Email or username"
           title="Email or username"
         />
-        <p></p>
+        <a></a>
         <Button text="Recover your password" className="login-now-button" />
-        <p></p>
+        <a></a>
         <a className="inline">
           <Label text="Return to" className="no-account-label" />
           <Button text="Login" className="join-free-forgot-password-button" />
