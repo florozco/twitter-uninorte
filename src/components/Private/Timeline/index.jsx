@@ -7,13 +7,17 @@ import Label from "./../../common/Label";
 import React, { useState } from "react";
 
 export default function Timeline() {
+  //to change timeline title
   const [contentTitle, setContentTitle] = useState("Home");
 
+  //to change navegation icon colors
+  //default color for home icon is blue
+  const [homeIconClassName, setHomeIconClassName] = useState("icon-blue-img");
+  //the rest have a grey color
   const [bookmarksIconClassName, setBookmarksIconClassName] =
     useState("icon-grey-img");
   const [exploreIconClassName, setExploreIconClassName] =
     useState("icon-grey-img");
-  const [homeIconClassName, setHomeIconClassName] = useState("icon-blue-img");
   const [listsIconClassName, setListsIconClassName] = useState("icon-grey-img");
   const [messagesIconClassName, setMessagesIconClassName] =
     useState("icon-grey-img");
@@ -23,14 +27,20 @@ export default function Timeline() {
   const [profileIconClassName, setProfileIconClassName] =
     useState("icon-grey-img");
 
+  //to change navegation button colors
+  //default color for home button is blue
+  const [homeButtonClassName, setHomeButtonClassName] = useState(
+    "timeline-navegation-selected-button"
+  );
+  //the rest have a grey color
+  const [profileButtonClassName, setProfileButtonClassName] = useState(
+    "timeline-navegation-button"
+  );
   const [bookmarksButtonClassName, setBookmarksButtonClassName] = useState(
     "timeline-navegation-button"
   );
   const [exploreButtonClassName, setExploreButtonClassName] = useState(
     "timeline-navegation-button"
-  );
-  const [homeButtonClassName, setHomeButtonClassName] = useState(
-    "timeline-navegation-selected-button"
   );
   const [listsButtonClassName, setListsButtonClassName] = useState(
     "timeline-navegation-button"
@@ -43,9 +53,6 @@ export default function Timeline() {
   );
   const [notificationsButtonClassName, setNotificationsButtonClassName] =
     useState("timeline-navegation-button");
-  const [profileButtonClassName, setProfileButtonClassName] = useState(
-    "timeline-navegation-button"
-  );
 
   const change2blue = (titulo) => {
     setContentTitle(titulo);
