@@ -1,0 +1,62 @@
+@use "sass:map";
+@import "variables";
+
+.icon-grey-img {
+  width: 1.503rem;
+  height: 1.503rem;
+  filter: map.get($twitter-fillers, "twitter-grey-filler");
+}
+.icon-grey-img:hover {
+  filter: map.get($twitter-fillers, "twitter-light-blue-filler");
+}
+
+.icon-blue-img {
+  width: 1.503rem;
+  height: 1.503rem;
+  filter: map.get($twitter-fillers, "twitter-blue-filler");
+}
+.icon-blue-img:hover {
+  filter: map.get($twitter-fillers, "twitter-light-blue-filler");
+}
+
+.icon-verified-blue-img {
+  width: 1.313rem;
+  height: 1.313rem;
+  filter: map.get($twitter-fillers, "twitter-blue-filler");
+}
+
+.icon-img {
+  width: 24.05px;
+  height: 21.94px;
+  vertical-align: "middle";
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.server-img {
+  width: 240.05px;
+  height: 210.94px;
+  vertical-align: "middle";
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.selected-icon-img {
+  width: 24.05px;
+  height: 21.94px;
+  vertical-align: "middle";
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.profile-icon-img {
+  width: 24.05px;
+  height: 21.94px;
+  vertical-align: "middle";
+  margin-top: 32px;
+  margin-left: 10px;
+  margin-right: 5px;
+}

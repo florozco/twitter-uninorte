@@ -23,7 +23,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.app{
+  display: flex;
+  height: 100vh;
+  max-width: 81.25rem;/*Arriba derecha abajo izquierda*/
+  margin: 0rem auto 0rem auto;
+  padding: 0rem 0.625rem;
+  justify-content: space-around;
+}
 .App-link {
   color: #61dafb;
 }

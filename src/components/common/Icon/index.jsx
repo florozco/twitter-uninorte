@@ -1,7 +1,7 @@
-const Icon = ({ IconName, ...rest }) => (
-  <div>
-    <img src={IconName} />
-  </div>
+const Icon = ({ IconName, AltName, ...rest }) => (
+  <>
+    <img src={IconName} alt={AltName} />
+  </>
 );
 
 export default Icon;
