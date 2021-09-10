@@ -5,8 +5,11 @@ import Img from "./../../common/Form";
 import Input from "./../../common/Input";
 import Label from "./../../common/Label";
 import "../../../styles/displayStyles.scss";
+import { useHistory } from "react-router-dom";
 
-const RecoverPassword = () => {
+export default function RecoverPassword() {
+  const history = useHistory();
+
   return (
     <Form className="center">
       <Img
@@ -29,14 +32,20 @@ const RecoverPassword = () => {
         title="Email or username"
       />
 
-      <Button text="Recover your password" className="login-now-button" />
+      <Button
+        text="Recover your password"
+        className="login-now-button"
+        onClick={() => history.push("/login")}
+      />
 
       <p className="inline">
         <Label text="Return to" className="no-account-label" />
-        <Button text="Login" className="join-free-forgot-password-button" />
+        <Button
+          text="Login"
+          className="join-free-forgot-password-button"
+          onClick={() => history.push("/login")}
+        />
       </p>
     </Form>
   );
-};
-
-export default RecoverPassword;
+}

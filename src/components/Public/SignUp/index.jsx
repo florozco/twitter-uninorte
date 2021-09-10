@@ -4,8 +4,11 @@ import Button from "./../../common/Button";
 import Form from "./../../common/Form";
 import Img from "./../../common/Img";
 import Image from "../../../images/index";
+import { useHistory } from "react-router-dom";
 
-const SignUp = () => {
+export default function SignUp() {
+  const history = useHistory();
+
   return (
     <Form className="center">
       <Label text="My Twitter" className="my-twitter-label" />
@@ -67,14 +70,20 @@ const SignUp = () => {
         title="Password confirmation"
       />
 
-      <Button text="Sign up" className="login-now-button" />
+      <Button
+        text="Sign up"
+        className="login-now-button"
+        onClick={() => history.push("/login")}
+      />
 
       <div className="inline">
         <Label text="Already have an account?" className="no-account-label" />
-        <Button text="Login" className="join-free-forgot-password-button" />
+        <Button
+          text="Login"
+          className="join-free-forgot-password-button"
+          onClick={() => history.push("/login")}
+        />
       </div>
     </Form>
   );
-};
-
-export default SignUp;
+}
