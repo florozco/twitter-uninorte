@@ -6,9 +6,13 @@
   vertical-align: middle;
 }
 
+.bloque {
+  display: block;
+}
+
 .center {
-  vertical-align: middle;
   text-align: center;
+  display: block;
 }
 
 .inline-real {
@@ -66,7 +70,7 @@
 .search-bar {
   text-align: center;
   display: inline-flex;
-  background-color: map.get($twitter-colors, "twitter-grey-search-input-color");
+  background-color: map.get($twitter-colors, "twitter-light-grey-color");
   height: 48px;
   left: 0px;
   right: 0px;
@@ -76,9 +80,9 @@
 }
 
 .trend-list-body {
-  background-color: map.get($twitter-colors, "twitter-grey-trend-color");
+  background-color: map.get($twitter-colors, "twitter-light-grey-color");
   border: transparent;
-  border-bottom: 1px map.get($twitter-colors, "twitter-grey-trend-border-color");
+  border-bottom: 1px map.get($twitter-colors, "twitter-light-grey-color");
 
   //display: flex;
   // flex-direction: column;

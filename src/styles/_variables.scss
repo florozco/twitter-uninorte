@@ -1,34 +1,24 @@
+$twitter-texts: (
+  "twitter-blue-text": rgba(29, 161, 242, 1),
+  "twitter-white-text": rgba(255, 255, 255, 1),
+  "twitter-grey-text": rgba(51, 51, 51, 1),
+  "twitter-black-text": rgba(26, 32, 44, 1),
+);
+
 $twitter-colors: (
   "twitter-blue-color": rgba(29, 161, 242, 1),
   "twitter-light-blue-color": rgba(29, 161, 242, 0.5),
   "twitter-grey-color": rgba(176, 176, 176, 1),
+  "twitter-light-grey-color": rgba(176, 176, 176, 0.7),
+  "twitter-black-color-900": rgba(26, 32, 44, 1),
   "twitter-white-color": rgba(255, 255, 255, 1),
-  "twitter-grey-input-border-color": rgba(232, 232, 232, 1),
-  "twitter-grey-search-input-color": rgba(231, 236, 240, 1),
-  "twitter-grey-trend-color": rgba(246, 248, 250, 1),
-  "twitter-grey-trend-border-color": rgba(0, 0, 0, 0.08),
 );
 
-$twitter-texts: (
-  "twitter-blue-text": rgba(29, 161, 242, 1),
-  "twitter-white-text": rgba(255, 255, 255, 1),
-  "twitter-grey-text": rgba(176, 176, 176, 1),
-  "twitter-grey-text-1": rgba(51, 51, 51, 1),
-  "twitter-grey-text-3": rgba(130, 130, 130, 1),
-  "twitter-grey-text-700": rgba(74, 85, 104, 1),
-  "twitter-grey-text-800": rgba(45, 55, 72, 1),
-  "twitter-black-text": rgba(0, 0, 0, 1),
-  "twitter-black-text-800": rgba(45, 55, 72, 1),
-  "twitter-black-text-900": rgba(26, 32, 44, 1),
+$twitter-fillers: (
+  "twitter-blue-filler": invert(47%) sepia(84%) saturate(441%)
+    hue-rotate(159deg) brightness(96%) contrast(112%),
+  "twitter-light-blue-filler": invert(47%) sepia(84%) saturate(441%)
+    hue-rotate(159deg) brightness(96%) contrast(112%) opacity(50%),
+  "twitter-grey-filler": invert(7%) sepia(1%) saturate(1283%) hue-rotate(314deg)
+    brightness(101%) contrast(71%),
 );
-
-$primary-color: #1da1f2;
-$secondary-color: white;
-$text-primary-color: #333;
-
-$twitter-primary-color: rgba(29, 161, 242, 1);
-$twitter-secondary-color: rgba(255, 255, 255, 1);
-
-$twitter-text-primary-color: rgba(26, 32, 44, 1);
-$twitter-text-secundary-color: rgba(29, 161, 242, 1);
-$twitter-text-tertiary-color: rgba(97, 97, 97, 1);

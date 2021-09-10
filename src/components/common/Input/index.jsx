@@ -4,7 +4,7 @@ const Input = (props) => {
   const { type, className, title, ...rest } = props;
 
   return (
-    <div>
+    <>
       <input
         // id={id} // specify a unique id
         // name={name} //Name of the form control.
@@ -13,7 +13,7 @@ const Input = (props) => {
         className={className}
         {...rest}
       />
-    </div>
+    </>
   );
 };
 

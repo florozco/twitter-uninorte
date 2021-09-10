@@ -1,9 +1,14 @@
-import Image from "../../../images/index";
 import "../../../styles/img.scss";
 
-const Img = ({ src, className, alt, ...rest }) => (
+const Img = ({ src, className, alt, onClick, onChange, ...rest }) => (
   <>
-    <img src={Image.twitterIcon} className="icon-img" alt={alt} />
+    <img
+      src={src}
+      className={className}
+      alt={alt}
+      onChange={onChange}
+      onClick={onClick}
+    />
   </>
 );
 
