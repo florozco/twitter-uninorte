@@ -1,15 +1,56 @@
 @use "sass:map";
 @import "variables";
 
+//home beginning
+
+.height-4 {
+  max-height: 0.2rem;
+}
+.login-form {
+  align-items: center;
+
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  min-width: 100%;
+  margin: -8px;
+  height: 100%;
+}
+
+.header-full {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  margin: -8px;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    map.get($twitter-colors, "twitter-blue-color") 50%,
+    map.get($twitter-colors, "twitter-white-color") 50%
+  );
+}
+.gen-flex-blue {
+  float: right;
+  min-width: 50%;
+}
+
+.gen-flex-white {
+  float: right;
+  min-width: 50%;
+  min-height: max-content;
+}
+//home end
+
 .inline {
   display: inline-flex;
   vertical-align: middle;
   justify-content: space-around;
 }
 
-.inline-body{
-  
-  
+.inline-body {
   align-items: center;
   font-weight: 56.25rem;
   font-size: 1.375rem;
@@ -17,21 +58,17 @@
   padding: 1.25rem;
 }
 
-.inline-block{
+.inline-block {
   display: flex;
-  
-align-items: center;
-font-weight:56.25rem;
-font-size: 1.375rem;
-height: 1.875rem;
-padding: 1.25rem;
 
-
+  align-items: center;
+  font-weight: 56.25rem;
+  font-size: 1.375rem;
+  height: 1.875rem;
+  padding: 1.25rem;
 }
 
-.inline-block-twitter{
-  
-  
+.inline-block-twitter {
   align-items: center;
   font-weight: 56.25rem;
   font-size: 1.27rem;
@@ -39,12 +76,9 @@ padding: 1.25rem;
   padding: 1.25rem;
 }
 
-.inline-block:hover{
+.inline-block:hover {
   background-color: rgb(224, 255, 254);
   border-radius: 1.875rem;
-  
-  
-  
 }
 
 .bloque {
@@ -60,9 +94,16 @@ padding: 1.25rem;
   display: inline-flex;
 }
 
-.inline-left {
-  text-align: start;
-  display: inline-flex;
+.inline-left-13 {
+  margin-right: 13%;
+}
+
+.inline-left-17 {
+  margin-right: 17%;
+}
+
+.inline-left-22 {
+  margin-right: 22%;
 }
 
 .icon-img {
@@ -115,8 +156,9 @@ padding: 1.25rem;
   height: 3rem;
   left: 0rem;
   right: 0rem;
+  width: 17.5rem;
   top: calc(50% - 3rem / 2);
-  border-radius:6.25rem;
+  border-radius: 6.25rem;
   border: transparent;
 }
 
@@ -124,7 +166,7 @@ padding: 1.25rem;
   background-color: map.get($twitter-colors, "twitter-light-grey-color");
   border: transparent;
   border-bottom: 0.063rem map.get($twitter-colors, "twitter-light-grey-color");
-  
+
   //display: flex;
   // flex-direction: column;
   // align-items: center;
@@ -139,14 +181,17 @@ padding: 1.25rem;
   flex-grow: 0;
   margin: 1rem 0rem;
 }
+
 .trend-body {
-  padding: 1.25rem;
-  display: flex;
+  padding: 0.1rem;
 }
 
 .grey-border-div {
-  background-color: rgba(0, 0, 0, 0.08);
-  height:0.063rem;
+  background-color: map.get($twitter-colors, "twitter-grey-color");
+  height: 0.063rem;
+  margin: 0%;
+  padding: 0%;
+  border: 0%;
   width: 100%;
   left: 0px;
   right: 0px;
@@ -162,30 +207,28 @@ padding: 1.25rem;
 .timeline-navegation {
   text-align: start;
   display: block;
-  width: 17.813rem;
-  
-  flex: 0.3rem;
-  min-width: 15.625rem;
-  margin:0rem 0rem 0rem 1.25rem;
+
+  min-width: 17.813rem;
+  margin: 0rem 0rem 0rem 1.25rem;
 }
 
 .timeline-body {
-  width: 43.375rem;
+  max-width: 43.375rem;
   overflow-y: scroll;
   height: auto;
-  border-left: 0.063rem solid
-    map.get($twitter-colors, "twitter-grey-trend-border-color");
-  border-right: 0.063rem solid
-    map.get($twitter-colors, "twitter-grey-trend-border-color");
+  border-left: 0.063rem solid map.get($twitter-colors, "twitter-grey-color");
+  border-right: 0.063rem solid map.get($twitter-colors, "twitter-grey-color");
   padding: 1.25rem;
 }
 
-.timeline-body::-webkit-scrollbar{
+.timeline-body::-webkit-scrollbar {
   display: none;
 }
 
 .timeline-search-trend {
-  text-align: unset;
+  text-align: inherit;
+  padding-left: 1.5rem;
+  padding-right: 5.188rem;
 }
 
 .timeline-tweet {

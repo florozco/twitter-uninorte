@@ -1,6 +1,12 @@
 @use "sass:map";
 @import "variables";
 
+.icon-blue-twitter-welcome-img {
+  width: 4.139rem;
+  height: 3.364rem;
+  filter: map.get($twitter-fillers, "twitter-blue-filler");
+}
+
 .icon-grey-img {
   width: 1.503rem;
   height: 1.503rem;
@@ -8,6 +14,12 @@
 }
 .icon-grey-img:hover {
   filter: map.get($twitter-fillers, "twitter-light-blue-filler");
+}
+
+.icon-white-tweeter-img {
+  filter: map.get($twitter-fillers, "twitter-white-filler");
+  width: 31.989rem;
+  height: 25.999rem;
 }
 
 .icon-blue-img {

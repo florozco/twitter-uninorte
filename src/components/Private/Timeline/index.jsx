@@ -227,145 +227,126 @@ export default function Timeline() {
   return (
     <div className="inline">
       <div className="timeline-navegation">
-        <div className="inline-block" >
         <Img
           src={Image.twitterIcon}
-          className="icon-blue-img"
+          className="icon-blue-twitter-welcome-img"
           alt="twitter-logo"
         />
-        </div>
-        
 
         <div>
-          <div className="inline-block">
-            <Img
-              name="homeIcon"
-              src={Image.homeIcon}
-              alt="home-icon"
-              className={homeIconClassName}
-              onClick={() => change2blue("Home")}
-            />
-            <Button
-              text="Home"
-              className={homeButtonClassName}
-              onClick={() => change2blue("Home")}
-            />
-          </div>
+          <Img
+            name="homeIcon"
+            src={Image.homeIcon}
+            alt="home-icon"
+            className={homeIconClassName}
+            onClick={() => change2blue("Home")}
+          />
+          <Button
+            text="Home"
+            className={homeButtonClassName}
+            onClick={() => change2blue("Home")}
+          />
         </div>
         <div>
-          <div className="inline-block">
-            <Img
-              name="exploreIcon"
-              src={Image.exploreIcon}
-              alt="explore-icon"
-              className={exploreIconClassName}
-              onClick={() => change2blue("Explore")}
-            />
-            <Button
-              text="Explore"
-              className={exploreButtonClassName}
-              onClick={() => change2blue("Explore")}
-            />
-          </div>
+          <Img
+            name="exploreIcon"
+            src={Image.exploreIcon}
+            alt="explore-icon"
+            className={exploreIconClassName}
+            onClick={() => change2blue("Explore")}
+          />
+          <Button
+            text="Explore"
+            className={exploreButtonClassName}
+            onClick={() => change2blue("Explore")}
+          />
         </div>
         <div>
-          <div className="inline-block">
-            <Img
-              name="notificationsIcon"
-              src={Image.notificationIcon}
-              alt="notifications-icon"
-              className={notificationsIconClassName}
-              onClick={() => change2blue("Notifications")}
-            />
+          <Img
+            name="notificationsIcon"
+            src={Image.notificationIcon}
+            alt="notifications-icon"
+            className={notificationsIconClassName}
+            onClick={() => change2blue("Notifications")}
+          />
 
-            <Button
-              text="Notifications"
-              className={notificationsButtonClassName}
-              onClick={() => change2blue("Notifications")}
-            />
-          </div>
+          <Button
+            text="Notifications"
+            className={notificationsButtonClassName}
+            onClick={() => change2blue("Notifications")}
+          />
         </div>
         <div>
-          <div className="inline-block">
-            <Img
-              name="MessagesIcon"
-              src={Image.messageIcon}
-              alt="messages-icon"
-              className={messagesIconClassName}
-              onClick={() => change2blue("Messages")}
-            />
-            <Button
-              text="Messages"
-              className={messagesButtonClassName}
-              onClick={() => change2blue("Messages")}
-            />
-          </div>
+          <Img
+            name="MessagesIcon"
+            src={Image.messageIcon}
+            alt="messages-icon"
+            className={messagesIconClassName}
+            onClick={() => change2blue("Messages")}
+          />
+          <Button
+            text="Messages"
+            className={messagesButtonClassName}
+            onClick={() => change2blue("Messages")}
+          />
         </div>
         <div>
-          <div className="inline-block">
-            <Img
-              name="bookmarksIcon"
-              src={Image.bookmarkIcon}
-              alt="bookmarks-icon"
-              className={bookmarksIconClassName}
-              onClick={() => change2blue("Bookmarks")}
-            />
+          <Img
+            name="bookmarksIcon"
+            src={Image.bookmarkIcon}
+            alt="bookmarks-icon"
+            className={bookmarksIconClassName}
+            onClick={() => change2blue("Bookmarks")}
+          />
 
-            <Button
-              text="Bookmarks"
-              className={bookmarksButtonClassName}
-              onClick={() => change2blue("Bookmarks")}
-            />
-          </div>
+          <Button
+            text="Bookmarks"
+            className={bookmarksButtonClassName}
+            onClick={() => change2blue("Bookmarks")}
+          />
         </div>
         <div>
-          <div className="inline-block">
-            <Img
-              name="listsIcon"
-              src={Image.listIcon}
-              alt="lists-icon"
-              className={listsIconClassName}
-              onClick={() => change2blue("Lists")}
-            />
+          <Img
+            name="listsIcon"
+            src={Image.listIcon}
+            alt="lists-icon"
+            className={listsIconClassName}
+            onClick={() => change2blue("Lists")}
+          />
 
-            <Button
-              text="Lists"
-              className={listsButtonClassName}
-              onClick={() => change2blue("Lists")}
-            />
-          </div>
+          <Button
+            text="Lists"
+            className={listsButtonClassName}
+            onClick={() => change2blue("Lists")}
+          />
         </div>
         <div>
-          <div className="inline-block">
-            <Img
-              name="profileIcon"
-              src={Image.profileIcon}
-              alt="profile-icon"
-              className={profileIconClassName}
-              onClick={() => change2blue("Profile")}
-            />
-            <Button
-              text="Profile"
-              className={profileButtonClassName}
-              onClick={() => change2blue("Profile")}
-            />
-          </div>
+          <Img
+            name="profileIcon"
+            src={Image.profileIcon}
+            alt="profile-icon"
+            className={profileIconClassName}
+            onClick={() => change2blue("Profile")}
+          />
+          <Button
+            text="Profile"
+            className={profileButtonClassName}
+            onClick={() => change2blue("Profile")}
+          />
         </div>
         <div>
-          <div className="inline-block">
-            <Img
-              name="moreIcon"
-              src={Image.moreIcon}
-              alt="more-icon"
-              className={moreIconClassName}
-              onClick={() => change2blue("More")}
-            />
-            <Button
-              text="More"
-              className={moreButtonClassName}
-              onClick={() => change2blue("More")}
-            />
-          </div>
+          <Img
+            name="moreIcon"
+            src={Image.moreIcon}
+            alt="more-icon"
+            className={moreIconClassName}
+            onClick={() => change2blue("More")}
+          />
+          <Button
+            text="More"
+            className={moreButtonClassName}
+            onClick={() => change2blue("More")}
+          />
         </div>
       </div>
 
@@ -376,13 +357,13 @@ export default function Timeline() {
           className="timeline-content-title-label"
         />
         <div className="inline">
-          <Img
-            src={Image.profileIcon}
-            className="icon-verified-blue-img"
-            alt="profile-icon"
-          />
           <div>
             <div className="inline-body">
+              <Img
+                src={Image.profileIcon}
+                className="icon-verified-blue-img"
+                alt="profile-icon"
+              />
               <Label text="Annie" className="timeline-content-user-label" />
               <Img
                 src={Image.verifiedIcon}
@@ -401,13 +382,13 @@ export default function Timeline() {
         </div>
         <div className="grey-border-div"></div>
         <div className="inline">
-          <Img
-            src={Image.profileIcon}
-            className="icon-verified-blue-img"
-            alt="profile-icon"
-          />
           <div>
             <div className="inline-body">
+              <Img
+                src={Image.profileIcon}
+                className="icon-verified-blue-img"
+                alt="profile-icon"
+              />
               <Label text="Annie" className="timeline-content-user-label" />
               <Img
                 src={Image.verifiedIcon}
@@ -447,57 +428,93 @@ export default function Timeline() {
             <Label text="Paris trend" className="trending-title-label" />
           </div>
           <div className="trend-body">
-            <Label
-              text="1. Trending"
-              className="trending-number-subtitle-label"
-            />
-            <Label text="#JessieMueller" className="trending-hashtag-label" />
-            <Label text="456K Tweets" className="trending-k-tweets-label" />
+            <p className="height-4">
+              <Label
+                text="1. Trending"
+                className="trending-number-subtitle-label"
+              />
+            </p>
+            <p className="height-4">
+              <Label text="#JessieMueller" className="trending-hashtag-label" />
+            </p>
+            <p className="height-4">
+              <Label text="456K Tweets" className="trending-k-tweets-label" />
+            </p>
           </div>
           <div className="grey-border-div"></div>
           <div className="trend-body">
-            <Label
-              text="2. Trending"
-              className="trending-number-subtitle-label"
-            />
-            <Label text="#ThelmaJones" className="trending-hashtag-label" />
-            <Label text="456K Tweets" className="trending-k-tweets-label" />
+            <p className="height-4">
+              <Label
+                text="2. Trending"
+                className="trending-number-subtitle-label"
+              />
+            </p>
+            <p className="height-4">
+              <Label text="#ThelmaJones" className="trending-hashtag-label" />
+            </p>
+            <p className="height-4">
+              <Label text="456K Tweets" className="trending-k-tweets-label" />
+            </p>
           </div>
           <div className="grey-border-div"></div>
           <div className="trend-body">
-            <Label
-              text="3. Trending"
-              className="trending-number-subtitle-label"
-            />
-            <Label text="#LoisPearson" className="trending-hashtag-label" />
-            <Label text="456K Tweets" className="trending-k-tweets-label" />
+            <p className="height-4">
+              <Label
+                text="3. Trending"
+                className="trending-number-subtitle-label"
+              />
+            </p>
+            <p className="height-4">
+              <Label text="#LoisPearson" className="trending-hashtag-label" />
+            </p>
+            <p className="height-4">
+              <Label text="456K Tweets" className="trending-k-tweets-label" />
+            </p>
           </div>
           <div className="grey-border-div"></div>{" "}
           <div className="trend-body">
-            <Label
-              text="4. Trending"
-              className="trending-number-subtitle-label"
-            />
-            <Label text="#WilmaBoyd" className="trending-hashtag-label" />
-            <Label text="456K Tweets" className="trending-k-tweets-label" />
+            <p className="height-4">
+              <Label
+                text="4. Trending"
+                className="trending-number-subtitle-label"
+              />
+            </p>
+            <p className="height-4">
+              <Label text="#WilmaBoyd" className="trending-hashtag-label" />
+            </p>
+            <p className="height-4">
+              <Label text="456K Tweets" className="trending-k-tweets-label" />
+            </p>
           </div>
           <div className="grey-border-div"></div>{" "}
           <div className="trend-body">
-            <Label
-              text="5. Trending"
-              className="trending-number-subtitle-label"
-            />
-            <Label text="#WilmaBoydr" className="trending-hashtag-label" />
-            <Label text="456K Tweets" className="trending-k-tweets-label" />
+            <p className="height-4">
+              <Label
+                text="5. Trending"
+                className="trending-number-subtitle-label"
+              />
+            </p>
+            <p className="height-4">
+              <Label text="#WilmaBoydr" className="trending-hashtag-label" />
+            </p>
+            <p className="height-4">
+              <Label text="456K Tweets" className="trending-k-tweets-label" />
+            </p>
           </div>
           <div className="grey-border-div"></div>{" "}
           <div className="trend-body">
-            <Label
-              text="6. Trending"
-              className="trending-number-subtitle-label"
-            />
-            <Label text="#ErikBaker" className="trending-hashtag-label" />
-            <Label text="456K Tweets" className="trending-k-tweets-label" />
+            <p className="height-4">
+              <Label
+                text="6. Trending"
+                className="trending-number-subtitle-label"
+              />
+            </p>
+            <p className="height-4">
+              <Label text="#ErikBaker" className="trending-hashtag-label" />
+            </p>
+            <p className="height-4">
+              <Label text="456K Tweets" className="trending-k-tweets-label" />
+            </p>
           </div>
           <div className="grey-border-div"></div>
           <div className="trend-list-title">
