@@ -26,9 +26,9 @@
 .app{
   display: flex;
   height: 100vh;
-  max-width: 1300px;/*Arriba derecha abajo izquierda*/
-  margin: 0px auto 0px auto;
-  padding: 0px 10px;
+  max-width: 81.25rem;/*Arriba derecha abajo izquierda*/
+  margin: 0rem auto 0rem auto;
+  padding: 0rem 0.625rem;
   justify-content: space-around;
 }
 .App-link {
