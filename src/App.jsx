@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Nav from "./components/common/Nav";
 import routes from "./lib/routes";
 import UserProvider from "./contexts/userContext";
-
+import "./App.css"
 const App = () => {
   const { restricted, unrestricted } = routes;
   return (
@@ -10,6 +10,8 @@ const App = () => {
       <BrowserRouter>
         <h1>App</h1>
         <Nav />
+
+        <div className="app">
         <UserProvider>
           <Switch>
             {restricted.map(({ path, component }) => (
@@ -20,6 +22,9 @@ const App = () => {
             ))}
           </Switch>
         </UserProvider>
+          
+        </div>
+        
       </BrowserRouter>
     </main>
   );

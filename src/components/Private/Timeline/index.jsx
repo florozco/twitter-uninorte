@@ -227,14 +227,17 @@ export default function Timeline() {
   return (
     <div className="inline">
       <div className="timeline-navegation">
+        <div className="inline-block" >
         <Img
           src={Image.twitterIcon}
           className="icon-blue-img"
           alt="twitter-logo"
         />
+        </div>
+        
 
         <div>
-          <div className="inline">
+          <div className="inline-block">
             <Img
               name="homeIcon"
               src={Image.homeIcon}
@@ -250,7 +253,7 @@ export default function Timeline() {
           </div>
         </div>
         <div>
-          <div className="inline">
+          <div className="inline-block">
             <Img
               name="exploreIcon"
               src={Image.exploreIcon}
@@ -266,7 +269,7 @@ export default function Timeline() {
           </div>
         </div>
         <div>
-          <div className="inline">
+          <div className="inline-block">
             <Img
               name="notificationsIcon"
               src={Image.notificationIcon}
@@ -283,7 +286,7 @@ export default function Timeline() {
           </div>
         </div>
         <div>
-          <div className="inline">
+          <div className="inline-block">
             <Img
               name="MessagesIcon"
               src={Image.messageIcon}
@@ -299,7 +302,7 @@ export default function Timeline() {
           </div>
         </div>
         <div>
-          <div className="inline">
+          <div className="inline-block">
             <Img
               name="bookmarksIcon"
               src={Image.bookmarkIcon}
@@ -316,7 +319,7 @@ export default function Timeline() {
           </div>
         </div>
         <div>
-          <div className="inline">
+          <div className="inline-block">
             <Img
               name="listsIcon"
               src={Image.listIcon}
@@ -333,7 +336,7 @@ export default function Timeline() {
           </div>
         </div>
         <div>
-          <div className="inline">
+          <div className="inline-block">
             <Img
               name="profileIcon"
               src={Image.profileIcon}
@@ -349,7 +352,7 @@ export default function Timeline() {
           </div>
         </div>
         <div>
-          <div className="inline">
+          <div className="inline-block">
             <Img
               name="moreIcon"
               src={Image.moreIcon}
@@ -379,7 +382,7 @@ export default function Timeline() {
             alt="profile-icon"
           />
           <div>
-            <div className="inline">
+            <div className="inline-body">
               <Label text="Annie" className="timeline-content-user-label" />
               <Img
                 src={Image.verifiedIcon}
@@ -404,7 +407,7 @@ export default function Timeline() {
             alt="profile-icon"
           />
           <div>
-            <div className="inline">
+            <div className="inline-body">
               <Label text="Annie" className="timeline-content-user-label" />
               <Img
                 src={Image.verifiedIcon}
@@ -428,7 +431,7 @@ export default function Timeline() {
           <Img
             className="icon-img"
             src={Image.searchIcon}
-            Width="16.46"
+            Width="16.46px"
             Height="16.46px"
           />
           <Input

@@ -4,6 +4,47 @@
 .inline {
   display: inline-flex;
   vertical-align: middle;
+  justify-content: space-around;
+}
+
+.inline-body{
+  
+  
+  align-items: center;
+  font-weight: 900;
+  font-size: 22px;
+  height: 30px;
+  padding: 20px;
+}
+
+.inline-block{
+  display: flex;
+  
+align-items: center;
+font-weight: 900;
+font-size: 22px;
+height: 30px;
+padding: 20px;
+
+
+}
+
+.inline-block-twitter{
+  
+  
+  align-items: center;
+  font-weight: 900;
+  font-size: 22px;
+  height: 40px;
+  padding: 20px;
+}
+
+.inline-block:hover{
+  background-color: rgb(224, 255, 254);
+  border-radius: 30px;
+  
+  
+  
 }
 
 .bloque {
@@ -83,7 +124,7 @@
   background-color: map.get($twitter-colors, "twitter-light-grey-color");
   border: transparent;
   border-bottom: 1px map.get($twitter-colors, "twitter-light-grey-color");
-
+  
   //display: flex;
   // flex-direction: column;
   // align-items: center;
@@ -99,7 +140,8 @@
   margin: 16px 0px;
 }
 .trend-body {
-  padding: 0px 16px 0px;
+  padding: 20px;
+  display: flex;
 }
 
 .grey-border-div {
@@ -121,16 +163,25 @@
   text-align: start;
   display: block;
   width: 285px;
+  
+  flex: 0.3;
+  min-width: 250px;
+  margin:0px 0px 0px 20px;
 }
 
 .timeline-body {
   width: 694px;
-
+  overflow-y: scroll;
   height: auto;
   border-left: 1px solid
     map.get($twitter-colors, "twitter-grey-trend-border-color");
   border-right: 1px solid
     map.get($twitter-colors, "twitter-grey-trend-border-color");
+  padding: 20px;
+}
+
+.timeline-body::-webkit-scrollbar{
+  display: none;
 }
 
 .timeline-search-trend {
