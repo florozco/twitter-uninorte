@@ -229,11 +229,11 @@ export default function Timeline() {
       <div className="timeline-navegation">
         <Img
           src={Image.twitterIcon}
-          className="icon-blue-twitter-welcome-img"
+          className="icon-blue-navegation-logo-img"
           alt="twitter-logo"
         />
 
-        <div>
+        <div className="height-1">
           <Img
             name="homeIcon"
             src={Image.homeIcon}
@@ -247,7 +247,7 @@ export default function Timeline() {
             onClick={() => change2blue("Home")}
           />
         </div>
-        <div>
+        <div className="height-1">
           <Img
             name="exploreIcon"
             src={Image.exploreIcon}
@@ -261,7 +261,7 @@ export default function Timeline() {
             onClick={() => change2blue("Explore")}
           />
         </div>
-        <div>
+        <div className="height-1">
           <Img
             name="notificationsIcon"
             src={Image.notificationIcon}
@@ -276,7 +276,7 @@ export default function Timeline() {
             onClick={() => change2blue("Notifications")}
           />
         </div>
-        <div>
+        <div className="height-1">
           <Img
             name="MessagesIcon"
             src={Image.messageIcon}
@@ -290,7 +290,7 @@ export default function Timeline() {
             onClick={() => change2blue("Messages")}
           />
         </div>
-        <div>
+        <div className="height-1">
           <Img
             name="bookmarksIcon"
             src={Image.bookmarkIcon}
@@ -305,7 +305,7 @@ export default function Timeline() {
             onClick={() => change2blue("Bookmarks")}
           />
         </div>
-        <div>
+        <div className="height-1">
           <Img
             name="listsIcon"
             src={Image.listIcon}
@@ -320,7 +320,7 @@ export default function Timeline() {
             onClick={() => change2blue("Lists")}
           />
         </div>
-        <div>
+        <div className="height-1">
           <Img
             name="profileIcon"
             src={Image.profileIcon}
@@ -334,7 +334,7 @@ export default function Timeline() {
             onClick={() => change2blue("Profile")}
           />
         </div>
-        <div>
+        <div className="height-1">
           <Img
             name="moreIcon"
             src={Image.moreIcon}
@@ -348,6 +348,7 @@ export default function Timeline() {
             onClick={() => change2blue("More")}
           />
         </div>
+        <Button text="Tweet" className="tweet-now-button" />
       </div>
 
       <div className="timeline-body">
@@ -414,6 +415,7 @@ export default function Timeline() {
             src={Image.searchIcon}
             Width="16.46px"
             Height="16.46px"
+            alt="search-icon"
           />
           <Input
             type="text"

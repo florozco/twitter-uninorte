@@ -9,7 +9,7 @@ const App = () => {
   return (
     <main>
       <BrowserRouter>
-        <Nav />
+        {/* <Nav /> */}
         <Switch>
           {restricted.map(({ path, component }) => (
             <Route exact path={path} component={component} />
