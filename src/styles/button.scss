@@ -55,7 +55,38 @@
   //login buttons
   color: map.get($twitter-texts, "twitter-grey-text");
   background-color: map.get($twitter-colors, "twitter-white-color");
+<<<<<<< Updated upstream
   border: 1px solid map.get($twitter-colors, "twitter-white-grey");
+=======
+  border: 0.063rem solid map.get($twitter-colors, "twitter-white-grey");
+}
+
+.tweet-now-button {
+  padding: 0px 0px;
+
+  position: absolute;
+  width: 180px;
+  height: 50px;
+  left: 80px;
+  top: 545px;
+  color: map.get($twitter-texts, "twitter-white-color");
+  background-color: map.get($twitter-colors, "twitter-blue-color");
+  box-shadow: 0px 0px 0px 0px transparent;
+  border-radius: 6.25rem;
+  border: 0px;
+}
+.tweet-now-button:hover {
+  padding: 0%;
+
+  position: absolute;
+  width: 11.25rem;
+  height: 3.125rem;
+
+  background: map.get($twitter-colors, "twitter-light-blue-color");
+  box-shadow: transparent;
+  border-radius: 6.25rem;
+  border: 0%;
+>>>>>>> Stashed changes
 }
 
 .login-now-button {
